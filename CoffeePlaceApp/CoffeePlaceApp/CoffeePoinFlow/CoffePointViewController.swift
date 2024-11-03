@@ -30,6 +30,7 @@ class CoffePointViewController:UIViewController{
         button.setTitleColor(CustomColors.whiteBrown, for: .normal)
         button.backgroundColor = CustomColors.blackBrown
         button.layer.cornerRadius = 20
+        button.addTarget(self, action: #selector(listButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -41,6 +42,7 @@ class CoffePointViewController:UIViewController{
         button.layer.cornerRadius = 20
         button.layer.borderWidth = 2
         button.layer.borderColor = CustomColors.blackBrown.cgColor
+        button.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -63,6 +65,13 @@ class CoffePointViewController:UIViewController{
         return collectionView
     }()
     
+    private lazy var mapView: CustomMapView = {
+        let view = CustomMapView()
+        view.isHidden = true
+        view.delegate = self
+        return view
+    }()
+    
     private lazy var Hstack: UIStackView = {
         let stack = UIStackView()
         stack.spacing = 10
@@ -73,15 +82,48 @@ class CoffePointViewController:UIViewController{
     
     var coffeePoints:[CoffePoint]?
     var presenter: CoffePointPresenter?
+    var isMapViewActive: Bool = false{
+        didSet{
+            updateView()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUP()
         addSubviews()
-        setupConstraints()        
+        setupConstraints()
     }
     
-
+    
+    @objc func mapButtonTapped() {
+        isMapViewActive = true
+        guard let points = coffeePoints else { return }
+        mapView.setupMapView(with: points)
+    }
+    
+    
+    @objc func listButtonTapped() {
+        guard isMapViewActive else { return }
+        isMapViewActive = false
+        
+    }
+    
+    func updateView() {
+        mapView.isHidden = !isMapViewActive
+        coffePointCollection.isHidden = isMapViewActive
+        switch isMapViewActive{
+        case true:
+            mapButton.switchEnable(totalPrice: 1)
+            listButton.switchEnable(totalPrice: 0)
+        case false:
+            mapButton.switchEnable(totalPrice: 0)
+            listButton.switchEnable(totalPrice: 1)
+        }
+        
+        
+    }
+    
 }
 extension CoffePointViewController:Designable{
     func setupUP() {
@@ -92,7 +134,8 @@ extension CoffePointViewController:Designable{
     func addSubviews() {
         [titleLabel,
          Hstack,
-         coffePointCollection
+         coffePointCollection,
+         mapView
         ].forEach(view.addSubview)
         
         [listButton,
@@ -111,6 +154,11 @@ extension CoffePointViewController:Designable{
         }
         
         coffePointCollection.snp.makeConstraints { make in
+            make.top.equalTo(Hstack.snp.bottom).offset(20)
+            make.leading.trailing.bottom.equalToSuperview()
+        }
+        
+        mapView.snp.makeConstraints { make in
             make.top.equalTo(Hstack.snp.bottom).offset(20)
             make.leading.trailing.bottom.equalToSuperview()
         }
@@ -153,3 +201,10 @@ extension CoffePointViewController:CoffePointProtocol{
         coffePointCollection.isHidden = false
     }
 }
+extension CoffePointViewController:MapViewDelegate {
+    func tappToMapMark(to point: CoffePoint) {
+        presenter?.goDetail(point: point)
+    }
+}
+
+

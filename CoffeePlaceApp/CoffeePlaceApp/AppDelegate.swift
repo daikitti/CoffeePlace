@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YandexMapsMobile
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GpsManager.shared.requestCurrentLocation()
+        YMKMapKit.setApiKey("862ca0a6-078b-42c5-b8e8-dc4d66e1806c")
+        YMKMapKit.sharedInstance()
+
         let vc = cheakAuth()
         let navController = UINavigationController(rootViewController: vc)
         navController.isNavigationBarHidden = true

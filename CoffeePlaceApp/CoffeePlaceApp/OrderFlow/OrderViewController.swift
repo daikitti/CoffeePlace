@@ -1,17 +1,17 @@
 //
-//  DetailCoffeeViewController.swift
+//  OrderViewController.swift
 //  CoffeePlaceApp
 //
-//  Created by Havydope Diii on 02.11.2024.
+//  Created by Havydope Diii on 03.11.2024.
 //
 
 import UIKit
 
-class DetailCoffeeViewController: UIViewController {
+class OrderViewController: UIViewController {
     
     private lazy var titleLabel:UILabel = {
         let label = UILabel()
-        label.text = ""
+        label.text = "Ваш заказ"
         label.font = .systemFont(ofSize: 25, weight: .bold)
         label.textAlignment = .left
         label.numberOfLines = 2
@@ -26,7 +26,7 @@ class DetailCoffeeViewController: UIViewController {
         return button
     }()
     
-    private lazy var menuCollection:UICollectionView = {
+    private lazy var orderCollection:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let inset = 20
@@ -39,7 +39,7 @@ class DetailCoffeeViewController: UIViewController {
         collectionView.backgroundColor = .clear
         collectionView.showsVerticalScrollIndicator = false
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        collectionView.register(MenuItemCell.self, forCellWithReuseIdentifier: MenuItemCell.CellID)
+        collectionView.register(OrderCell.self, forCellWithReuseIdentifier: OrderCell.CellID)
         return collectionView
     }()
     
@@ -55,52 +55,53 @@ class DetailCoffeeViewController: UIViewController {
     
     private lazy var goPayButton:UIButton = {
         let button = UIButton()
-        button.setTitle("Перейти к оплате", for: .normal)
-        button.setTitleColor(CustomColors.blackBrown, for: .normal)
-        button.backgroundColor = .clear
-        button.layer.borderColor = CustomColors.blackBrown.cgColor
-        button.layer.borderWidth = 2
+        button.setTitle("Оплатить", for: .normal)
+        button.setTitleColor(CustomColors.whiteBrown, for: .normal)
+        button.backgroundColor = CustomColors.green
         button.layer.cornerRadius = 25
-        button.addTarget(self, action: #selector(goPayOrder), for: .touchUpInside)
         return button
     }()
     
+    var orderCart: [(MenuItem, Int)] = []{
+        didSet{
+            checkOrderCart()
+            updateTotalPrice()
+        }
+    }
+    var presenter: OrderPresenter?
     
     
-    var MenuCoffee: [MenuItem]?
-    var presenter: DetailCoffeePresenter?
-    var cart: [MenuItem: Int] = [:]
-
     override func viewDidLoad() {
+        super.viewDidLoad()
         setupUP()
         addSubviews()
         setupConstraints()
-        presenter?.fetchMenuItems()
     }
+    
     
     @objc func goBack(){
         presenter?.goBack()
     }
-    
-    @objc func goPayOrder(){
-        presenter?.goPayOrder(orderCart:self.cart)
-    }
 }
 
-extension DetailCoffeeViewController: Designable{
+
+extension OrderViewController: Designable{
     func setupUP() {
         view.backgroundColor = CustomColors.whiteBrown
+        if let orderCart = presenter?.cardOrder {
+            self.orderCart = Array(orderCart)
+        }
     }
     
     func addSubviews() {
         [titleLabel,
          backButton,
-         menuCollection,
+         orderCollection,
          bottomConteynir].forEach(view.addSubview)
         
         bottomConteynir.addSubview(priceTtile)
         bottomConteynir.addSubview(goPayButton)
-
+        
     }
     
     func setupConstraints() {
@@ -115,7 +116,7 @@ extension DetailCoffeeViewController: Designable{
             make.height.width.equalTo(45)
         }
         
-        menuCollection.snp.makeConstraints { make in
+        orderCollection.snp.makeConstraints { make in
             make.top.equalTo(titleLabel).offset(40)
             make.leading.trailing.equalToSuperview()
             make.bottom.equalTo(bottomConteynir.snp.top)
@@ -140,68 +141,63 @@ extension DetailCoffeeViewController: Designable{
         }
         
     }
-    
-    
 }
 
-extension DetailCoffeeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+extension OrderViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return MenuCoffee?.count ?? 0
+        return orderCart.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuItemCell.CellID, for: indexPath) as! MenuItemCell
-        guard let menuItem = MenuCoffee?[indexPath.row] else { return cell }
-        cell.configurate(with: menuItem)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OrderCell.CellID, for: indexPath) as! OrderCell
+        let order = orderCart[indexPath.row]
+        cell.configurate(with: order.0, count: order.1)
         cell.delegate = self
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.frame.width / 2.3
-        let height = width * 1.5
+        let width = collectionView.frame.width * 0.9
+        let height = collectionView.frame.height / 5
         return CGSize(width: width, height: height)
     }
     
 }
 
-extension DetailCoffeeViewController{
-    func reloadView(coffePoint: [MenuItem]){
-        self.MenuCoffee = coffePoint
-        titleLabel.text = presenter?.coffeePoint.name
-        menuCollection.reloadData()
-    }
-}
-extension DetailCoffeeViewController: MenuItemCellDelegate {
-    func addToPay(item: MenuItem) {
-        if let count = cart[item] {
-            cart[item] = count + 1
-        } else {
-            cart[item] = 1
-        }
-    updateTotalPrice()
-    }
-    
-    func deleteToPay(item: MenuItem) {
-        if let count = cart[item], count > 1 {
-            cart[item] = count - 1
-        } else {
-            cart.removeValue(forKey: item)
-        }
-        
-        updateTotalPrice()
-    }
 
+extension OrderViewController:OrderCellDelegate{
+    func addToPay(item: MenuItem) {
+           if let index = orderCart.firstIndex(where: { $0.0.id == item.id }) {
+               orderCart[index].1 += 1
+           }
+        updateTotalPrice()
+       }
+       
+       func deleteToPay(item: MenuItem) {
+           if let index = orderCart.firstIndex(where: { $0.0.id == item.id }) {
+               if orderCart[index].1 > 1 {
+                   orderCart[index].1 -= 1  
+               } else {
+                   orderCart.remove(at: index)  // Удаляем товар, если количество становится 0
+                   orderCollection.deleteItems(at: [IndexPath(row: index, section: 0)]) // Удаляем ячейку
+               }
+           }
+           updateTotalPrice()
+
+       }
+    
+    
     private func updateTotalPrice() {
-        let totalPrice = cart.reduce(0) { result, dictItem in
+        let totalPrice = orderCart.reduce(0) { result, dictItem in
             let (menuItem, itemCount) = dictItem
             return result + (menuItem.price * itemCount)
         }
         priceTtile.updatePrice(price: String(totalPrice))
-        goPayButton.switchEnable(totalPrice: totalPrice)
     }
     
-    
+    private func checkOrderCart() {
+        if orderCart.isEmpty {
+            presenter?.goBack()
+        }
+    }
 }
-
-

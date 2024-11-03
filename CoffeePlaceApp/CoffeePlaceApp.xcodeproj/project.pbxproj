@@ -21,6 +21,12 @@
 		B613C8E92CD60D6800F74726 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8E82CD60D5C00F74726 /* MenuItemCell.swift */; };
 		B613C8EB2CD615FA00F74726 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8EA2CD615F300F74726 /* UIImageView.swift */; };
 		B613C8ED2CD61E4100F74726 /* CustomPriceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8EC2CD61E3300F74726 /* CustomPriceForm.swift */; };
+		B613C8F32CD730D800F74726 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8F22CD730CE00F74726 /* OrderCell.swift */; };
+		B613C9022CD737FD00F74726 /* OrderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8FD2CD737FD00F74726 /* OrderAssembly.swift */; };
+		B613C9032CD737FD00F74726 /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8FE2CD737FD00F74726 /* OrderPresenter.swift */; };
+		B613C9042CD737FD00F74726 /* OrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8FF2CD737FD00F74726 /* OrderRouter.swift */; };
+		B613C9052CD737FD00F74726 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C9002CD737FD00F74726 /* OrderViewController.swift */; };
+		B613C9072CD7702500F74726 /* GpsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C9062CD7701100F74726 /* GpsManager.swift */; };
 		B6C1B57B2CD38E45003C6D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C1B5712CD38E45003C6D5F /* Assets.xcassets */; };
 		B6C1B57C2CD38E45003C6D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C1B5732CD38E45003C6D5F /* LaunchScreen.storyboard */; };
 		B6C1B57D2CD38E45003C6D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C1B5752CD38E45003C6D5F /* Main.storyboard */; };
@@ -54,6 +60,12 @@
 		B613C8E82CD60D5C00F74726 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		B613C8EA2CD615F300F74726 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		B613C8EC2CD61E3300F74726 /* CustomPriceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPriceForm.swift; sourceTree = "<group>"; };
+		B613C8F22CD730CE00F74726 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		B613C8FD2CD737FD00F74726 /* OrderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAssembly.swift; sourceTree = "<group>"; };
+		B613C8FE2CD737FD00F74726 /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
+		B613C8FF2CD737FD00F74726 /* OrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouter.swift; sourceTree = "<group>"; };
+		B613C9002CD737FD00F74726 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		B613C9062CD7701100F74726 /* GpsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsManager.swift; sourceTree = "<group>"; };
 		B6C1B5582CD38DCB003C6D5F /* CoffeePlaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePlaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C1B5712CD38E45003C6D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C1B5722CD38E45003C6D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +100,7 @@
 		B613C8D82CD5E0A500F74726 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B613C8F22CD730CE00F74726 /* OrderCell.swift */,
 				B613C8E82CD60D5C00F74726 /* MenuItemCell.swift */,
 				B613C8D92CD5E0AE00F74726 /* CoffePointCell.swift */,
 			);
@@ -103,6 +116,17 @@
 				B613C8DE2CD6042E00F74726 /* DetailCoffeeViewController.swift */,
 			);
 			path = DetailCoffeePoint;
+			sourceTree = "<group>";
+		};
+		B613C9012CD737FD00F74726 /* OrderFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B613C8FD2CD737FD00F74726 /* OrderAssembly.swift */,
+				B613C8FF2CD737FD00F74726 /* OrderRouter.swift */,
+				B613C8FE2CD737FD00F74726 /* OrderPresenter.swift */,
+				B613C9002CD737FD00F74726 /* OrderViewController.swift */,
+			);
+			path = OrderFlow;
 			sourceTree = "<group>";
 		};
 		B6C1B54F2CD38DCB003C6D5F = {
@@ -141,6 +165,7 @@
 				B6C1B5922CD3914D003C6D5F /* LoadingFlow */,
 				B6C1B5AB2CD4AF4C003C6D5F /* CoffeePoinFlow */,
 				B613C8DD2CD6040500F74726 /* DetailCoffeePoint */,
+				B613C9012CD737FD00F74726 /* OrderFlow */,
 				B6C1B5A62CD4A8E1003C6D5F /* Helper */,
 				B6C1B5762CD38E45003C6D5F /* Resourses */,
 				B6C1B5772CD38E45003C6D5F /* AppDelegate.swift */,
@@ -193,6 +218,7 @@
 		B6C1B5A62CD4A8E1003C6D5F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B613C9062CD7701100F74726 /* GpsManager.swift */,
 				B613C8D02CD5CACC00F74726 /* CheckAuthentication.swift */,
 				B6C1B5A72CD4A8EC003C6D5F /* ApiManager.swift */,
 			);
@@ -290,6 +316,7 @@
 			files = (
 				B613C8ED2CD61E4100F74726 /* CustomPriceForm.swift in Sources */,
 				B613C8DF2CD6047100F74726 /* DetailCoffeeViewController.swift in Sources */,
+				B613C8F32CD730D800F74726 /* OrderCell.swift in Sources */,
 				B613C8D72CD5DE3500F74726 /* CoffePointAssembly.swift in Sources */,
 				B613C8D52CD5DE2B00F74726 /* CoffePointRouter.swift in Sources */,
 				B613C8E72CD60A2B00F74726 /* DetailCoffeeAssembly.swift in Sources */,
@@ -303,11 +330,16 @@
 				B6C1B5942CD3914D003C6D5F /* LoadingPresenter.swift in Sources */,
 				B6C1B5992CD3916F003C6D5F /* DesignExtension.swift in Sources */,
 				B613C8E32CD60A0E00F74726 /* DetailCoffeePresenter.swift in Sources */,
+				B613C9072CD7702500F74726 /* GpsManager.swift in Sources */,
 				B613C8D12CD5CB1600F74726 /* CheckAuthentication.swift in Sources */,
 				B6C1B5A32CD3A800003C6D5F /* PreviewAuth.swift in Sources */,
 				B6C1B59F2CD3A4CD003C6D5F /* LoaderType.swift in Sources */,
 				B6C1B5A82CD4A8F5003C6D5F /* ApiManager.swift in Sources */,
 				B6C1B5A52CD47E0D003C6D5F /* CustomTextFields.swift in Sources */,
+				B613C9022CD737FD00F74726 /* OrderAssembly.swift in Sources */,
+				B613C9032CD737FD00F74726 /* OrderPresenter.swift in Sources */,
+				B613C9042CD737FD00F74726 /* OrderRouter.swift in Sources */,
+				B613C9052CD737FD00F74726 /* OrderViewController.swift in Sources */,
 				B613C8E12CD6051D00F74726 /* MenuCoffee.swift in Sources */,
 				B6C1B59C2CD39D3E003C6D5F /* LoginForm.swift in Sources */,
 				B613C8D32CD5DE2500F74726 /* CoffePointPresenter.swift in Sources */,
@@ -349,6 +381,7 @@
 				DEVELOPMENT_TEAM = JC7MTK2ADS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoffeePlaceApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Разрешите нам отслеживать вашу геопозицию для определения расстояния до близжшайшей кофейни.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -377,6 +410,7 @@
 				DEVELOPMENT_TEAM = JC7MTK2ADS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoffeePlaceApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Разрешите нам отслеживать вашу геопозицию для определения расстояния до близжшайшей кофейни.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

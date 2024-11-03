@@ -126,6 +126,7 @@ extension LoadingViewController:Designable{
             make.top.equalTo(view.snp.centerY).offset(-100)
             make.leading.trailing.equalToSuperview().inset(20)
             make.bottom.equalTo(loginButton.snp.top).offset(-30)
+            make.height.greaterThanOrEqualTo(250) 
         }
         
         loginButton.snp.makeConstraints { make in

@@ -30,5 +30,9 @@ class DetailCoffeePresenter {
     func goBack(){
         router.goBack()
     }
+    
+    func goPayOrder(orderCart: [MenuItem:Int]){
+        router.goPayOrder(orderCart: orderCart)
+    }
 }
 

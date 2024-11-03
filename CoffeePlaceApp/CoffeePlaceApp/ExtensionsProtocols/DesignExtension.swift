@@ -41,3 +41,23 @@ extension UIColor{
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
 }
+
+extension UIButton {
+    func switchEnable(totalPrice: Int) {
+        UIView.animate(withDuration: 0.5) { [weak self] in
+            guard let self = self else { return }
+            if totalPrice == 0 {
+                self.setTitleColor(CustomColors.blackBrown, for: .normal)
+                self.backgroundColor = .clear
+                self.layer.borderWidth = 2
+                self.layer.borderColor = CustomColors.blackBrown.cgColor
+            } else {
+                self.setTitleColor(CustomColors.whiteBrown, for: .normal)
+                self.backgroundColor = CustomColors.blackBrown
+                self.layer.borderColor = UIColor.clear.cgColor
+            }
+            self.layoutIfNeeded()
+        }
+    }
+   
+}

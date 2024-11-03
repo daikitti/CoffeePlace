@@ -16,7 +16,6 @@ class LoadingRouter{
     
     func goToCoffeePoint(){
         DispatchQueue.main.async{
-           
             let vc =  CoffePointAssembly().makeCoffePointViewController()
             let controller = UINavigationController(rootViewController:vc)
             controller.modalPresentationStyle = .fullScreen

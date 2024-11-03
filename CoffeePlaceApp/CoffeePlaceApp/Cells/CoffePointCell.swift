@@ -64,7 +64,7 @@ class CoffePointCell: UICollectionViewCell {
     func configurateCell(with coffePoint: CoffePoint) {
         self.coffePoint = coffePoint
         nameLabel.text = coffePoint.name
-       // distanceLabel.text = coffePoint.name
+        distanceLabel.text = GpsManager.shared.getDistanceToPoint(point: coffePoint.point)
         coffeImage.image = UIImage(named: coffePoint.name)
     }
     
@@ -73,7 +73,6 @@ class CoffePointCell: UICollectionViewCell {
 
 extension CoffePointCell: Designable{
     func setupUP() {
-        //
     }
     
     func addSubviews() {

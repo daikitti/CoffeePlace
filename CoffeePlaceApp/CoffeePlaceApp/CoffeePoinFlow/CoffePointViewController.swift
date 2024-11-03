@@ -59,6 +59,7 @@ class CoffePointViewController:UIViewController{
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         collectionView.register(CoffePointCell.self, forCellWithReuseIdentifier: CoffePointCell.CellID)
         collectionView.backgroundColor = CustomColors.blackBrown
+        collectionView.isHidden = true
         return collectionView
     }()
     
@@ -77,8 +78,7 @@ class CoffePointViewController:UIViewController{
         super.viewDidLoad()
         setupUP()
         addSubviews()
-        setupConstraints()
-        presenter?.fetchLocations()
+        setupConstraints()        
     }
     
 
@@ -86,6 +86,7 @@ class CoffePointViewController:UIViewController{
 extension CoffePointViewController:Designable{
     func setupUP() {
         view.backgroundColor = CustomColors.whiteBrown
+        presenter?.fetchLocations()
     }
     
     func addSubviews() {
@@ -149,5 +150,6 @@ extension CoffePointViewController:CoffePointProtocol{
     func reload(with data: [CoffePoint]){
         self.coffeePoints = data
         self.coffePointCollection.reloadData()
+        coffePointCollection.isHidden = false
     }
 }

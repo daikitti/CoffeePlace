@@ -16,9 +16,6 @@ struct CoffePoint: Codable {
 
 // MARK: - Point
 struct Point: Codable {
-    let latitude, longitude: Itude
+    let latitude, longitude: String
 }
 
-// MARK: - Itude
-struct Itude: Codable {
-}

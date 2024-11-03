@@ -12,10 +12,8 @@ final class CheckAuthentication{
     private init() {}
     
     func saveToken(_ token: String, lifetime: Int) {
-        print( token , lifetime )
-        print( token , lifetime )
 
-        let EndDate = Date().addingTimeInterval(TimeInterval(lifetime))
+        let EndDate = Date().addingTimeInterval(TimeInterval(lifetime/1000))
         UserDefaults.standard.set(token, forKey: "authToken")
         UserDefaults.standard.set(EndDate, forKey: "tokenEndDate")
     }

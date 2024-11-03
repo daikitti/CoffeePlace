@@ -14,4 +14,8 @@ class DetailCoffeeRouter {
     func goBack(){
         viewcontroller.navigationController?.popViewController(animated: true)
     }
+    func goPayOrder(orderCart: [MenuItem:Int]){
+        let vc = OrderAssembly().makeOrderView(cartOrder: orderCart)
+        viewcontroller.navigationController?.pushViewController(vc, animated: true)
+    }
 }

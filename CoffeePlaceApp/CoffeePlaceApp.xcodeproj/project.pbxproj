@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B613C8D12CD5CB1600F74726 /* CheckAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8D02CD5CACC00F74726 /* CheckAuthentication.swift */; };
+		B613C8D32CD5DE2500F74726 /* CoffePointPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8D22CD5DE1E00F74726 /* CoffePointPresenter.swift */; };
+		B613C8D52CD5DE2B00F74726 /* CoffePointRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8D42CD5DE2700F74726 /* CoffePointRouter.swift */; };
+		B613C8D72CD5DE3500F74726 /* CoffePointAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8D62CD5DE2F00F74726 /* CoffePointAssembly.swift */; };
+		B613C8DA2CD5E0B600F74726 /* CoffePointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8D92CD5E0AE00F74726 /* CoffePointCell.swift */; };
+		B613C8DC2CD5FE5300F74726 /* CoffePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8DB2CD5FE4D00F74726 /* CoffePoint.swift */; };
+		B613C8DF2CD6047100F74726 /* DetailCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8DE2CD6042E00F74726 /* DetailCoffeeViewController.swift */; };
+		B613C8E12CD6051D00F74726 /* MenuCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8E02CD6051A00F74726 /* MenuCoffee.swift */; };
+		B613C8E32CD60A0E00F74726 /* DetailCoffeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8E22CD60A0C00F74726 /* DetailCoffeePresenter.swift */; };
+		B613C8E52CD60A2200F74726 /* DetailCoffeeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8E42CD60A1E00F74726 /* DetailCoffeeRouter.swift */; };
+		B613C8E72CD60A2B00F74726 /* DetailCoffeeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8E62CD60A2500F74726 /* DetailCoffeeAssembly.swift */; };
+		B613C8E92CD60D6800F74726 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8E82CD60D5C00F74726 /* MenuItemCell.swift */; };
+		B613C8EB2CD615FA00F74726 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8EA2CD615F300F74726 /* UIImageView.swift */; };
+		B613C8ED2CD61E4100F74726 /* CustomPriceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C8EC2CD61E3300F74726 /* CustomPriceForm.swift */; };
 		B6C1B57B2CD38E45003C6D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C1B5712CD38E45003C6D5F /* Assets.xcassets */; };
 		B6C1B57C2CD38E45003C6D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C1B5732CD38E45003C6D5F /* LaunchScreen.storyboard */; };
 		B6C1B57D2CD38E45003C6D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C1B5752CD38E45003C6D5F /* Main.storyboard */; };
@@ -26,6 +40,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B613C8D02CD5CACC00F74726 /* CheckAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAuthentication.swift; sourceTree = "<group>"; };
+		B613C8D22CD5DE1E00F74726 /* CoffePointPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffePointPresenter.swift; sourceTree = "<group>"; };
+		B613C8D42CD5DE2700F74726 /* CoffePointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffePointRouter.swift; sourceTree = "<group>"; };
+		B613C8D62CD5DE2F00F74726 /* CoffePointAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffePointAssembly.swift; sourceTree = "<group>"; };
+		B613C8D92CD5E0AE00F74726 /* CoffePointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffePointCell.swift; sourceTree = "<group>"; };
+		B613C8DB2CD5FE4D00F74726 /* CoffePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffePoint.swift; sourceTree = "<group>"; };
+		B613C8DE2CD6042E00F74726 /* DetailCoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeeViewController.swift; sourceTree = "<group>"; };
+		B613C8E02CD6051A00F74726 /* MenuCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoffee.swift; sourceTree = "<group>"; };
+		B613C8E22CD60A0C00F74726 /* DetailCoffeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeePresenter.swift; sourceTree = "<group>"; };
+		B613C8E42CD60A1E00F74726 /* DetailCoffeeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeeRouter.swift; sourceTree = "<group>"; };
+		B613C8E62CD60A2500F74726 /* DetailCoffeeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeeAssembly.swift; sourceTree = "<group>"; };
+		B613C8E82CD60D5C00F74726 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		B613C8EA2CD615F300F74726 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		B613C8EC2CD61E3300F74726 /* CustomPriceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPriceForm.swift; sourceTree = "<group>"; };
 		B6C1B5582CD38DCB003C6D5F /* CoffeePlaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePlaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C1B5712CD38E45003C6D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C1B5722CD38E45003C6D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +85,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B613C8D82CD5E0A500F74726 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B613C8E82CD60D5C00F74726 /* MenuItemCell.swift */,
+				B613C8D92CD5E0AE00F74726 /* CoffePointCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B613C8DD2CD6040500F74726 /* DetailCoffeePoint */ = {
+			isa = PBXGroup;
+			children = (
+				B613C8E62CD60A2500F74726 /* DetailCoffeeAssembly.swift */,
+				B613C8E42CD60A1E00F74726 /* DetailCoffeeRouter.swift */,
+				B613C8E22CD60A0C00F74726 /* DetailCoffeePresenter.swift */,
+				B613C8DE2CD6042E00F74726 /* DetailCoffeeViewController.swift */,
+			);
+			path = DetailCoffeePoint;
+			sourceTree = "<group>";
+		};
 		B6C1B54F2CD38DCB003C6D5F = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +134,14 @@
 		B6C1B57A2CD38E45003C6D5F /* CoffeePlaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				B6C1B5AB2CD4AF4C003C6D5F /* CoffePoinFlow */,
-				B6C1B5A62CD4A8E1003C6D5F /* Helper */,
 				B6C1B5972CD39151003C6D5F /* ExtensionsProtocols */,
+				B613C8D82CD5E0A500F74726 /* Cells */,
 				B6C1B59D2CD3A4B8003C6D5F /* Models */,
 				B6C1B59A2CD39D1E003C6D5F /* CustomViews */,
 				B6C1B5922CD3914D003C6D5F /* LoadingFlow */,
+				B6C1B5AB2CD4AF4C003C6D5F /* CoffeePoinFlow */,
+				B613C8DD2CD6040500F74726 /* DetailCoffeePoint */,
+				B6C1B5A62CD4A8E1003C6D5F /* Helper */,
 				B6C1B5762CD38E45003C6D5F /* Resourses */,
 				B6C1B5772CD38E45003C6D5F /* AppDelegate.swift */,
 				B6C1B5782CD38E45003C6D5F /* Info.plist */,
@@ -113,6 +163,7 @@
 		B6C1B5972CD39151003C6D5F /* ExtensionsProtocols */ = {
 			isa = PBXGroup;
 			children = (
+				B613C8EA2CD615F300F74726 /* UIImageView.swift */,
 				B6C1B5982CD39165003C6D5F /* DesignExtension.swift */,
 			);
 			path = ExtensionsProtocols;
@@ -121,6 +172,7 @@
 		B6C1B59A2CD39D1E003C6D5F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				B613C8EC2CD61E3300F74726 /* CustomPriceForm.swift */,
 				B6C1B5A42CD47E02003C6D5F /* CustomTextFields.swift */,
 				B6C1B5A22CD3A7E4003C6D5F /* PreviewAuth.swift */,
 				B6C1B59B2CD39D2D003C6D5F /* LoginForm.swift */,
@@ -131,6 +183,8 @@
 		B6C1B59D2CD3A4B8003C6D5F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B613C8E02CD6051A00F74726 /* MenuCoffee.swift */,
+				B613C8DB2CD5FE4D00F74726 /* CoffePoint.swift */,
 				B6C1B59E2CD3A4C2003C6D5F /* LoaderType.swift */,
 			);
 			path = Models;
@@ -139,17 +193,21 @@
 		B6C1B5A62CD4A8E1003C6D5F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B613C8D02CD5CACC00F74726 /* CheckAuthentication.swift */,
 				B6C1B5A72CD4A8EC003C6D5F /* ApiManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		B6C1B5AB2CD4AF4C003C6D5F /* CoffePoinFlow */ = {
+		B6C1B5AB2CD4AF4C003C6D5F /* CoffeePoinFlow */ = {
 			isa = PBXGroup;
 			children = (
+				B613C8D62CD5DE2F00F74726 /* CoffePointAssembly.swift */,
+				B613C8D42CD5DE2700F74726 /* CoffePointRouter.swift */,
+				B613C8D22CD5DE1E00F74726 /* CoffePointPresenter.swift */,
 				B6C1B5AC2CD4AF5B003C6D5F /* CoffePointViewController.swift */,
 			);
-			path = CoffePoinFlow;
+			path = CoffeePoinFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,17 +288,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B613C8ED2CD61E4100F74726 /* CustomPriceForm.swift in Sources */,
+				B613C8DF2CD6047100F74726 /* DetailCoffeeViewController.swift in Sources */,
+				B613C8D72CD5DE3500F74726 /* CoffePointAssembly.swift in Sources */,
+				B613C8D52CD5DE2B00F74726 /* CoffePointRouter.swift in Sources */,
+				B613C8E72CD60A2B00F74726 /* DetailCoffeeAssembly.swift in Sources */,
 				B6C1B57F2CD38E45003C6D5F /* AppDelegate.swift in Sources */,
 				B6C1B5AD2CD4AF63003C6D5F /* CoffePointViewController.swift in Sources */,
+				B613C8EB2CD615FA00F74726 /* UIImageView.swift in Sources */,
+				B613C8E52CD60A2200F74726 /* DetailCoffeeRouter.swift in Sources */,
 				B6C1B5932CD3914D003C6D5F /* LoadingAssembly.swift in Sources */,
+				B613C8DA2CD5E0B600F74726 /* CoffePointCell.swift in Sources */,
+				B613C8E92CD60D6800F74726 /* MenuItemCell.swift in Sources */,
 				B6C1B5942CD3914D003C6D5F /* LoadingPresenter.swift in Sources */,
 				B6C1B5992CD3916F003C6D5F /* DesignExtension.swift in Sources */,
+				B613C8E32CD60A0E00F74726 /* DetailCoffeePresenter.swift in Sources */,
+				B613C8D12CD5CB1600F74726 /* CheckAuthentication.swift in Sources */,
 				B6C1B5A32CD3A800003C6D5F /* PreviewAuth.swift in Sources */,
 				B6C1B59F2CD3A4CD003C6D5F /* LoaderType.swift in Sources */,
 				B6C1B5A82CD4A8F5003C6D5F /* ApiManager.swift in Sources */,
 				B6C1B5A52CD47E0D003C6D5F /* CustomTextFields.swift in Sources */,
+				B613C8E12CD6051D00F74726 /* MenuCoffee.swift in Sources */,
 				B6C1B59C2CD39D3E003C6D5F /* LoginForm.swift in Sources */,
+				B613C8D32CD5DE2500F74726 /* CoffePointPresenter.swift in Sources */,
 				B6C1B5952CD3914D003C6D5F /* LoadingRouter.swift in Sources */,
+				B613C8DC2CD5FE5300F74726 /* CoffePoint.swift in Sources */,
 				B6C1B5962CD3914D003C6D5F /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

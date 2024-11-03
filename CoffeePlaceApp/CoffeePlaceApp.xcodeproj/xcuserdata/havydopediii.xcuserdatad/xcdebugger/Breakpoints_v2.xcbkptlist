@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1C144E36-7C0D-4FC9-A597-B41DDEAA5A2D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
@@ -18,6 +18,50 @@
             endingLineNumber = "20"
             landmarkName = "registrationAction(email:password:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C144E36-7C0D-4FC9-A597-B41DDEAA5A2D - dfb606eec4c79e7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "1C144E36-7C0D-4FC9-A597-B41DDEAA5A2D - d9513e240dd19349"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "1C144E36-7C0D-4FC9-A597-B41DDEAA5A2D - f799fa1e11f08f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -88,7 +132,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B5DA7A0-FC74-46B7-B84D-B9C28E6098D3"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
@@ -104,7 +148,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A5D4FDD1-89D0-41FE-A25F-CFB53532BFA3"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
@@ -114,13 +158,71 @@
             endingLineNumber = "21"
             landmarkName = "registrationAction(email:password:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A5D4FDD1-89D0-41FE-A25F-CFB53532BFA3 - f799fa1e11f0b2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "A5D4FDD1-89D0-41FE-A25F-CFB53532BFA3 - a53cb893c5d00233"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "A5D4FDD1-89D0-41FE-A25F-CFB53532BFA3 - fb3f1655ec36cf2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "A5D4FDD1-89D0-41FE-A25F-CFB53532BFA3 - 11c22d0ff2bd6128"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5B3899BD-B854-4D0D-9A56-A039589DBCFE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
@@ -129,6 +231,620 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "registrationAction(email:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5B3899BD-B854-4D0D-9A56-A039589DBCFE - f799fa1e11f0b2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "5B3899BD-B854-4D0D-9A56-A039589DBCFE - a53cb893c5d00233"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "5B3899BD-B854-4D0D-9A56-A039589DBCFE - fb3f1655ec36cf2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "5B3899BD-B854-4D0D-9A56-A039589DBCFE - 11c22d0ff2bd6128"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.LoadingPresenter.registrationAction(email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/LoadingFlow/LoadingPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC4CF0F4-7E54-47B3-B274-527D030188BF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchMenuItems()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AC4CF0F4-7E54-47B3-B274-527D030188BF - ef0fd49fcfd10388"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.DetailCoffeePresenter.fetchMenuItems() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+               <Location
+                  uuid = "AC4CF0F4-7E54-47B3-B274-527D030188BF - 42bc37443bae08b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.DetailCoffeePresenter.fetchMenuItems() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+               <Location
+                  uuid = "AC4CF0F4-7E54-47B3-B274-527D030188BF - 5f9dccd61b0cbb8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.DetailCoffeePresenter.fetchMenuItems() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+               <Location
+                  uuid = "AC4CF0F4-7E54-47B3-B274-527D030188BF - a078c74c08976f86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.DetailCoffeePresenter.fetchMenuItems() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FC0F67E-8319-4140-AD70-56F10D926A6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchMenuItems()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2FC0F67E-8319-4140-AD70-56F10D926A6D - 5f9dccd61b0cbbef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.DetailCoffeePresenter.fetchMenuItems() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "2FC0F67E-8319-4140-AD70-56F10D926A6D - 77eacf35bd25f7e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.DetailCoffeePresenter.fetchMenuItems() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "2FC0F67E-8319-4140-AD70-56F10D926A6D - 8823c369677e33e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.DetailCoffeePresenter.fetchMenuItems() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2AF19B6-2E46-4A82-9567-4EA87A25A7FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchLocations()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A33047C-847C-4BE9-9256-F9C86A398842"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchLocations()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4A33047C-847C-4BE9-9256-F9C86A398842 - 43409d19aaeb39d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.CoffePointPresenter.fetchLocations() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+               <Location
+                  uuid = "4A33047C-847C-4BE9-9256-F9C86A398842 - def83bd90ec063e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.CoffePointPresenter.fetchLocations() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+               <Location
+                  uuid = "4A33047C-847C-4BE9-9256-F9C86A398842 - 429e4635c090e5de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.CoffePointPresenter.fetchLocations() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+               <Location
+                  uuid = "4A33047C-847C-4BE9-9256-F9C86A398842 - c4524940084a03db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.CoffePointPresenter.fetchLocations() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B5FF388-80C6-4A87-B2CE-735281C5F1C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchLocations()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B5FF388-80C6-4A87-B2CE-735281C5F1C9 - 429e4635c090e59c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.CoffePointPresenter.fetchLocations() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+               <Location
+                  uuid = "2B5FF388-80C6-4A87-B2CE-735281C5F1C9 - c5049ca7edad479f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.CoffePointPresenter.fetchLocations() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+               <Location
+                  uuid = "2B5FF388-80C6-4A87-B2CE-735281C5F1C9 - 45ad32d61eb9a19e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 () async -&gt; () in CoffeePlaceApp.CoffePointPresenter.fetchLocations() -&gt; ()"
+                  moduleName = "CoffeePlaceApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/havydopediii/Desktop/CoffeePlace/CoffeePlaceApp/CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6350FAAE-89B5-401B-8D64-ED270E8C9CB0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/CoffeePoinFlow/CoffePointPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchLocations()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2681F677-B985-4D71-879A-093148DF3061"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "goBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2A5A9B6-0C44-44AB-9D89-8A1E58816259"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "goBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E9E965A-9FA4-4E0D-AF52-471DCAAF58F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "goBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "031469D0-F8F1-4EF7-94AB-B6D5025D8517"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "goBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30C5174F-393A-4807-B7B6-D2117A93CC8F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "goBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3B1F495-A0A1-496A-8CA8-C8F29C83F753"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeeRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "goBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EA8EC26-4F9B-4D36-A05B-7CE3AD204FC4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/DetailCoffeePoint/DetailCoffeeRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "goBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A96A4FA0-6071-45D3-A5B7-C9AC18B57A40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "saveToken(_:lifetime:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55BFF918-7BE6-417E-B25D-0FE4A5652E36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "saveToken(_:lifetime:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A0EE899-F21C-499D-8A1F-7E7B7B3192C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "886916A8-E3C7-4A45-8BD5-5D9A542D3FF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B65E4485-A6A6-40B8-9DB6-07FA636DA4CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "542AAD5F-3CFB-414C-8FE6-C3B9F8806B31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74F0BB8D-7439-4079-AD90-49AE36710129"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94EB70E7-93ED-4AF1-BEAE-17FB7EA1DA2C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "saveToken(_:lifetime:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF963B56-F240-449C-AA2F-338459D6B2A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeePlaceApp/Helper/CheckAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "saveToken(_:lifetime:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

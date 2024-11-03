@@ -16,6 +16,9 @@ protocol Designable{
 struct CustomColors{
     static let blackBrown = UIColor(hexString: "230C02")
     static let whiteBrown = UIColor(hexString: "FFF5E9")
+    static let gray = UIColor(hexString: "FFF5E9").withAlphaComponent(0.7)
+    static let green = UIColor(hexString: "469E6D")
+
 
 }
 

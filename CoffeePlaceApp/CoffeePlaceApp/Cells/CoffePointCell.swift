@@ -7,10 +7,10 @@
 
 import UIKit
 
-
+//MARK: ячейка для кофеточки
 class CoffePointCell: UICollectionViewCell {
-    
     static let CellID = "CoffePointCell"
+    
     private lazy var conteynirView: UIView = {
         let view = UIView()
         view.backgroundColor = CustomColors.whiteBrown
@@ -31,7 +31,7 @@ class CoffePointCell: UICollectionViewCell {
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.text  = "COFFEE LIKE"
-        label.font = .systemFont(ofSize: 23, weight: .bold)
+        label.font = .systemFont(ofSize: 25, weight: .bold)
         label.textColor = CustomColors.blackBrown
         label.textAlignment = .left
         label.numberOfLines = 2
@@ -41,11 +41,11 @@ class CoffePointCell: UICollectionViewCell {
     }()
     
     private lazy var coffeImage: UIImageView = {
-    let imageView = UIImageView()
-        imageView.image = UIImage(named: "testImage")
-        imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 15
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "holderCoffee")
+        imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
+        imageView.alpha = 0.3
         return imageView
     }()
     
@@ -65,7 +65,6 @@ class CoffePointCell: UICollectionViewCell {
         self.coffePoint = coffePoint
         nameLabel.text = coffePoint.name
         distanceLabel.text = GpsManager.shared.getDistanceToPoint(point: coffePoint.point)
-        coffeImage.image = UIImage(named: coffePoint.name)
     }
     
     
@@ -77,7 +76,7 @@ extension CoffePointCell: Designable{
     
     func addSubviews() {
         self.addSubview(conteynirView)
-
+        
         [
             nameLabel,
             distanceLabel,
@@ -89,7 +88,7 @@ extension CoffePointCell: Designable{
         conteynirView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-    
+        
         
         nameLabel.snp.makeConstraints { make in
             make.centerY.equalTo(conteynirView)

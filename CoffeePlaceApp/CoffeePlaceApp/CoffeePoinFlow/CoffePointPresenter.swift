@@ -15,17 +15,17 @@ class CoffePointPresenter {
         self.router = router
     }
     
-     func fetchLocations() {
-           Task {
-               do {
-                   let coffeePointsData = try await APIService.shared.getCoffePoints()
-                   print(coffeePointsData)
-                   await viewcontroller?.reload(with: coffeePointsData)
-               } catch {
-                   print("Ошибка получения кофеен: \(error.localizedDescription)")
-               }
-           }
-       }
+    func fetchLocations() {
+        Task {
+            do {
+                let coffeePointsData = try await APIService.shared.getCoffePoints()
+                print(coffeePointsData)
+                await viewcontroller?.reload(with: coffeePointsData)
+            } catch {
+                print("Ошибка получения кофеен: \(error.localizedDescription)")
+            }
+        }
+    }
     
     func goDetail(point:CoffePoint){
         router.goDetailViewController(point: point)

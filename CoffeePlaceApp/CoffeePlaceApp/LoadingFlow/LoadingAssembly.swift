@@ -7,7 +7,6 @@
 
 
 final class LoadingAssembly{
-    
     func makeLoadingView() -> LoadingViewController{
         let vc = LoadingViewController()
         let router = LoadingRouter(viewcontroller: vc)

@@ -5,7 +5,7 @@
 //  Created by Havydope Diii on 02.11.2024.
 //
 
-// MARK: - CoffePoint
+// MARK: - MenuItem
 struct MenuItem: Codable, Hashable {
     let id: Int
     let name, imageURL: String

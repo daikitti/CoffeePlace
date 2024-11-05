@@ -201,6 +201,7 @@ extension CoffePointViewController:CoffePointProtocol{
         coffePointCollection.isHidden = false
     }
 }
+
 extension CoffePointViewController:MapViewDelegate {
     func tappToMapMark(to point: CoffePoint) {
         presenter?.goDetail(point: point)

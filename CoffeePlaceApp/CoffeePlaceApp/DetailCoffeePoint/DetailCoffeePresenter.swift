@@ -16,16 +16,16 @@ class DetailCoffeePresenter {
     }
     
     func fetchMenuItems() {
-          Task {
-              do {
-                  let coffeePointsData = try await APIService.shared.getMenu(for: coffeePoint.id)
-                  await viewcontroller?.reloadView(coffePoint: coffeePointsData)
-                  
-              } catch {
-                  print("Ошибка получения менюшек: \(error.localizedDescription)")
-              }
-          }
-      }
+        Task {
+            do {
+                let coffeePointsData = try await APIService.shared.getMenu(for: coffeePoint.id)
+                await viewcontroller?.reloadView(coffePoint: coffeePointsData)
+                
+            } catch {
+                print("Ошибка получения менюшек: \(error.localizedDescription)")
+            }
+        }
+    }
     
     func goBack(){
         router.goBack()

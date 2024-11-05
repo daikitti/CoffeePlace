@@ -18,17 +18,17 @@ class LoadingPresenter {
     func registrationAction(email: String, password: String){
         print("registrationAction")
         Task {
-               do {
-                   try await APIService.shared.register(email: email, password: password)
-                   print("Registration successful")
-                   
-                   router.goToCoffeePoint()
-               } catch let error as APIError {
-                   print("Registration failed: \(error.localizedDescription)")
-               } catch {
-                   print("Unexpected error: \(error.localizedDescription)")
-               }
-           }
+            do {
+                try await APIService.shared.register(email: email, password: password)
+                print("Registration successful")
+                
+                router.goToCoffeePoint()
+            } catch let error as APIError {
+                print("Registration failed: \(error.localizedDescription)")
+            } catch {
+                print("Unexpected error: \(error.localizedDescription)")
+            }
+        }
         
     }
     

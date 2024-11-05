@@ -12,7 +12,7 @@ protocol OrderCellDelegate {
     func deleteToPay(item:MenuItem)
 }
 
-
+//MARK: ячейка для выбранных товаров
 class OrderCell: UICollectionViewCell {
     
     static let CellID = "OrderCell"
@@ -24,7 +24,7 @@ class OrderCell: UICollectionViewCell {
         view.clipsToBounds = true
         return view
     }()
-
+    
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.text  = " "
@@ -38,7 +38,7 @@ class OrderCell: UICollectionViewCell {
     }()
     
     private lazy var coffeImage: UIImageView = {
-    let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.image = UIImage(named: "testImage")
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 15
@@ -133,7 +133,7 @@ extension OrderCell:Designable{
     
     func addSubviews() {
         self.addSubview(conteynirView)
-
+        
         [
             nameLabel,
             priceLabel,

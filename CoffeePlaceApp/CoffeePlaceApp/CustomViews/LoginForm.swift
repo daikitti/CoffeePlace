@@ -170,11 +170,11 @@ extension LoginFormView {
     func getEmail() -> String? {
         return emailTextField.customTextField.text
     }
-
+    
     func getPassword() -> String? {
         return passwordTextField.customTextField.text
     }
-
+    
     func getRetryPassword() -> String? {
         return retryPasswordTextField.customTextField.text
     }

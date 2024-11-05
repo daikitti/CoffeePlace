@@ -7,6 +7,7 @@
 
 import CoreLocation
 
+//MARK: получении координат пользователя и расчет расстояния до точки 
 class GpsManager: NSObject, CLLocationManagerDelegate {
     
     static let shared = GpsManager()
@@ -37,11 +38,11 @@ class GpsManager: NSObject, CLLocationManagerDelegate {
         let distanceInMeters = userLocation.distance(from: point)
         
         if distanceInMeters < 1000 {
-               return String(format: "%.0f м от вас", distanceInMeters)
-           } else {
-               let distanceInKilometers = distanceInMeters / 1000
-               return String(format: "%.1f км от вас", distanceInKilometers)
-           }
+            return String(format: "%.0f м от вас", distanceInMeters)
+        } else {
+            let distanceInKilometers = distanceInMeters / 1000
+            return String(format: "%.1f км от вас", distanceInKilometers)
+        }
     }
     
     
@@ -56,5 +57,5 @@ class GpsManager: NSObject, CLLocationManagerDelegate {
         print("Ошибка получения местоположения: \(error.localizedDescription)")
     }
     
-   
+    
 }

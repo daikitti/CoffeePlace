@@ -7,21 +7,24 @@
 
 import UIKit
 
+//MARK: протокол для дизайн
 protocol Designable{
     func setupUP()
     func addSubviews()
     func setupConstraints()
 }
 
+//MARK: кастомные цвета
 struct CustomColors{
     static let blackBrown = UIColor(hexString: "230C02")
     static let whiteBrown = UIColor(hexString: "FFF5E9")
     static let gray = UIColor(hexString: "FFF5E9").withAlphaComponent(0.7)
     static let green = UIColor(hexString: "469E6D")
-
-
+    
+    
 }
 
+//MARK: расширение для получения цвета по hex
 extension UIColor{
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -42,6 +45,7 @@ extension UIColor{
     }
 }
 
+//MARK: полная заливака/контур кнопки 
 extension UIButton {
     func switchEnable(totalPrice: Int) {
         UIView.animate(withDuration: 0.5) { [weak self] in
@@ -59,5 +63,5 @@ extension UIButton {
             self.layoutIfNeeded()
         }
     }
-   
+    
 }

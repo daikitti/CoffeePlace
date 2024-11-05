@@ -167,24 +167,24 @@ extension OrderViewController : UICollectionViewDelegate, UICollectionViewDataSo
 
 extension OrderViewController:OrderCellDelegate{
     func addToPay(item: MenuItem) {
-           if let index = orderCart.firstIndex(where: { $0.0.id == item.id }) {
-               orderCart[index].1 += 1
-           }
+        if let index = orderCart.firstIndex(where: { $0.0.id == item.id }) {
+            orderCart[index].1 += 1
+        }
         updateTotalPrice()
-       }
-       
-       func deleteToPay(item: MenuItem) {
-           if let index = orderCart.firstIndex(where: { $0.0.id == item.id }) {
-               if orderCart[index].1 > 1 {
-                   orderCart[index].1 -= 1  
-               } else {
-                   orderCart.remove(at: index)  // Удаляем товар, если количество становится 0
-                   orderCollection.deleteItems(at: [IndexPath(row: index, section: 0)]) // Удаляем ячейку
-               }
-           }
-           updateTotalPrice()
-
-       }
+    }
+    
+    func deleteToPay(item: MenuItem) {
+        if let index = orderCart.firstIndex(where: { $0.0.id == item.id }) {
+            if orderCart[index].1 > 1 {
+                orderCart[index].1 -= 1  
+            } else {
+                orderCart.remove(at: index)  // Удаляем товар, если количество становится 0
+                orderCollection.deleteItems(at: [IndexPath(row: index, section: 0)]) // Удаляем ячейку
+            }
+        }
+        updateTotalPrice()
+        
+    }
     
     
     private func updateTotalPrice() {

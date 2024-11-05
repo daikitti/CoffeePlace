@@ -13,6 +13,7 @@ protocol MenuItemCellDelegate {
     func deleteToPay(item:MenuItem)
 }
 
+//MARK: ячейка для объекта в меню кофе-точки
 class MenuItemCell: UICollectionViewCell{
     static let CellID = "MenuItemCell"
     
@@ -82,7 +83,7 @@ class MenuItemCell: UICollectionViewCell{
     var count = 0{
         didSet{
             countPay.text = "\(count)"
-
+            
         }
     }
     override init(frame: CGRect) {
@@ -166,7 +167,7 @@ extension MenuItemCell: Designable{
             make.trailing.equalTo(countPay.snp.leading).inset(5)
             make.height.width.centerY.equalTo(addButton)
         }
-       
+        
         loader.snp.makeConstraints { make in
             make.edges.equalTo(menuImage)
         }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//MARK: обработка ошибок
 enum APIError: Error {
     case invalidURL
     case loginFailed
@@ -38,9 +38,9 @@ enum APIError: Error {
 
 
 class APIService {
-    
     static let shared = APIService()
     
+    //MARK: пост логина
     func login(email: String, password: String) async throws {
         guard let url = URL(string: "http://147.78.66.203:3210/auth/login") else { throw APIError.invalidURL}
         
@@ -64,7 +64,7 @@ class APIService {
             CheckAuthentication.shared.saveToken(token, lifetime: lifetime)
         }
     }
-    
+    //MARK:  пост регистрации
     func register(email: String, password: String) async throws {
         guard let url = URL(string: "http://147.78.66.203:3210/auth/register") else { throw APIError.invalidURL }
         
@@ -85,7 +85,7 @@ class APIService {
         let result = try JSONSerialization.jsonObject(with: data)
         print(result)
     }
-    
+    //MARK: получение точек
     func getCoffePoints() async throws -> [CoffePoint] {
         guard let url = URL(string: "http://147.78.66.203:3210/locations") else { throw APIError.invalidURL }
         
@@ -107,10 +107,10 @@ class APIService {
                 throw APIError.unauthorized
             }
         }
-            let locations = try JSONDecoder().decode([CoffePoint].self, from: data)
-            return locations
+        let locations = try JSONDecoder().decode([CoffePoint].self, from: data)
+        return locations
     }
-    
+    //MARK: меню для точки 
     func getMenu(for locationID: Int) async throws -> [MenuItem] {
         guard let url = URL(string: "http://147.78.66.203:3210/location/\(locationID)/menu") else {
             throw APIError.invalidURL

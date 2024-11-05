@@ -17,7 +17,7 @@ class PreviewAuth: UIView {
         label.numberOfLines = 3
         return label
     }()
-
+    
     private lazy var studioLabel: UILabel = {
         let label = UILabel()
         label.text = "Seven Winds Coffee"

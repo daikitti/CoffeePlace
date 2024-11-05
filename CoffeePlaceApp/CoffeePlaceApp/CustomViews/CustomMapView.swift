@@ -125,8 +125,6 @@ extension CustomMapView: Designable {
             make.centerX.equalTo(zoomInButton)
             make.width.height.equalTo(50)
         }
-        
-        
     }
 }
 

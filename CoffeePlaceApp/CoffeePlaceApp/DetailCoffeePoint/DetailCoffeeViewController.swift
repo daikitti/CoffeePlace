@@ -70,7 +70,7 @@ class DetailCoffeeViewController: UIViewController {
     var MenuCoffee: [MenuItem]?
     var presenter: DetailCoffeePresenter?
     var cart: [MenuItem: Int] = [:]
-
+    
     override func viewDidLoad() {
         setupUP()
         addSubviews()
@@ -100,7 +100,7 @@ extension DetailCoffeeViewController: Designable{
         
         bottomConteynir.addSubview(priceTtile)
         bottomConteynir.addSubview(goPayButton)
-
+        
     }
     
     func setupConstraints() {
@@ -138,10 +138,7 @@ extension DetailCoffeeViewController: Designable{
             make.trailing.equalTo(bottomConteynir).inset(10)
             make.height.equalTo(priceTtile)
         }
-        
-    }
-    
-    
+    }    
 }
 
 extension DetailCoffeeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -179,7 +176,7 @@ extension DetailCoffeeViewController: MenuItemCellDelegate {
         } else {
             cart[item] = 1
         }
-    updateTotalPrice()
+        updateTotalPrice()
     }
     
     func deleteToPay(item: MenuItem) {
@@ -191,7 +188,7 @@ extension DetailCoffeeViewController: MenuItemCellDelegate {
         
         updateTotalPrice()
     }
-
+    
     private func updateTotalPrice() {
         let totalPrice = cart.reduce(0) { result, dictItem in
             let (menuItem, itemCount) = dictItem
@@ -199,9 +196,8 @@ extension DetailCoffeeViewController: MenuItemCellDelegate {
         }
         priceTtile.updatePrice(price: String(totalPrice))
         goPayButton.switchEnable(totalPrice: totalPrice)
+        goPayButton.isEnabled = (totalPrice != 0)
     }
-    
-    
 }
 
 

@@ -6,7 +6,7 @@
 //
 
 final class DetailCoffeeAssembly {
-   
+    
     func makeDetailCoffeeViewController(coffePoint: CoffePoint) -> DetailCoffeeViewController {
         let vc = DetailCoffeeViewController()
         let router = DetailCoffeeRouter(viewcontroller: vc)

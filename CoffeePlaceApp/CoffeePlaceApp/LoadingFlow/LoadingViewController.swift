@@ -46,7 +46,7 @@ class LoadingViewController: UIViewController {
     }()
     
     
-     var presenter: LoadingPresenter?
+    var presenter: LoadingPresenter?
     private var typeLoginForm: LoaderType = .defaultType {
         didSet {
             loginFormView.updateLoginForm(with: self.typeLoginForm)
@@ -173,6 +173,6 @@ extension LoadingViewController{
             }
         }
     }
-
-
+    
+    
 }

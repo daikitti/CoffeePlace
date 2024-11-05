@@ -171,8 +171,5 @@ extension MenuItemCell: Designable{
         loader.snp.makeConstraints { make in
             make.edges.equalTo(menuImage)
         }
-        
     }
-    
-    
 }
